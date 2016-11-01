@@ -23,10 +23,15 @@
             </intent-filter>
         </activity>
 
+
         <activity
             android:name=".AsthmaTest"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">		 	   </activity>
+
+        <activity android:name=".Home_Screen" />
+        <activity android:name=".MedicineCheck" />
+        <activity android:name=".Settings_Screen"></activity>
     </application>
 
 </manifest>
