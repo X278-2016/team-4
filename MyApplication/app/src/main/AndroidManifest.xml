@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home_Screen"></activity>
+        <activity android:name=".Home_Screen" />
+        <activity android:name=".MedicineCheck"></activity>
     </application>
 
 </manifest>
