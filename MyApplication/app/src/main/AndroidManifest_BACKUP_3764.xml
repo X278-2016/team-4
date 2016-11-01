@@ -22,11 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+<<<<<<< HEAD
         <activity
             android:name=".AsthmaTest"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">		 	   </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+        <activity android:name=".Home_Screen"></activity>
+>>>>>>> master
     </application>
 
 </manifest>
