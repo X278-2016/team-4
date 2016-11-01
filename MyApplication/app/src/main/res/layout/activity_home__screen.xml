@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:id="@+id/button"
+        android:id="@+id/settings_button"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -26,35 +26,35 @@
         android:text="Help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button"
+        android:layout_alignTop="@+id/settings_button"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="50dp"
         android:layout_marginEnd="50dp"
-        android:id="@+id/button2" />
+        android:id="@+id/help_button" />
 
     <Button
         android:text="Connect to MyHealth Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:id="@+id/connect_my_health_login_button"
+        android:layout_below="@+id/settings_button"
+        android:layout_alignLeft="@+id/settings_button"
+        android:layout_alignStart="@+id/settings_button"
+        android:layout_alignRight="@+id/help_button"
+        android:layout_alignEnd="@+id/help_button" />
 
     <Button
         android:text="Asthma Control Test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:id="@+id/button4"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:id="@+id/asthma_control_test_button"
+        android:layout_alignRight="@+id/connect_my_health_login_button"
+        android:layout_alignEnd="@+id/connect_my_health_login_button"
+        android:layout_alignLeft="@+id/connect_my_health_login_button"
+        android:layout_alignStart="@+id/connect_my_health_login_button" />
 
     <Button
         android:text="Medicine Logging"
@@ -62,21 +62,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="17dp"
-        android:id="@+id/button6"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignEnd="@+id/button5"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5" />
+        android:id="@+id/medicine_log_button"
+        android:layout_alignRight="@+id/current_stats_button"
+        android:layout_alignEnd="@+id/current_stats_button"
+        android:layout_alignLeft="@+id/current_stats_button"
+        android:layout_alignStart="@+id/current_stats_button" />
 
     <Button
         android:text="Current Stats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:id="@+id/current_stats_button"
+        android:layout_below="@+id/asthma_control_test_button"
+        android:layout_alignLeft="@+id/asthma_control_test_button"
+        android:layout_alignStart="@+id/asthma_control_test_button"
+        android:layout_alignRight="@+id/asthma_control_test_button"
+        android:layout_alignEnd="@+id/asthma_control_test_button" />
 </RelativeLayout>
