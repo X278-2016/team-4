@@ -9,28 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alec.myapplication.MedicineCheck">
 
-    <RadioButton
-        android:text="Medicine not taken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/med"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:id="@+id/not_taken"
-        android:checked="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
-
-    <RadioButton
-        android:text="Medicine taken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:id="@+id/taken"
-        android:layout_below="@+id/not_taken"
-        android:layout_alignLeft="@+id/not_taken"
-        android:layout_alignStart="@+id/not_taken"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
-
     <TextView
         android:text="Have you taken your medicine?"
         android:layout_width="wrap_content"
@@ -40,5 +18,38 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/med_check"
+        android:checkedButton="@+id/not_taken"
+        android:layout_below="@+id/med"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="Medicine not taken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:id="@+id/not_taken"
+            android:checked="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/med"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:text="Medicine taken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/taken"
+            android:layout_below="@+id/not_taken"
+            android:layout_alignLeft="@+id/not_taken"
+            android:layout_alignStart="@+id/not_taken"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight="1" />
+
+    </RadioGroup>
 
 </RelativeLayout>
