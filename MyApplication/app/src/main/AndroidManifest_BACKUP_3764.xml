@@ -22,22 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Home_Screen" />
-        <activity android:name=".Help_Screen" />
-        <activity android:name=".MyHealthLogin_Screen" />
-        <activity android:name=".CurrentStats_Screen"></activity>
-
-
-
+<<<<<<< HEAD
         <activity
             android:name=".AsthmaTest"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">		 	   </activity>
-
-        <activity android:name=".Home_Screen" />
-        <activity android:name=".MedicineCheck" />
-        <activity android:name=".Settings_Screen"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+        <activity android:name=".Home_Screen"></activity>
+>>>>>>> master
     </application>
 
 </manifest>
