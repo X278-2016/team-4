@@ -29,10 +29,11 @@
         <activity
             android:name=".AsthmaTest"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MedicineCheck" />
         <activity android:name=".Settings_Screen" />
-        <activity android:name=".SignUpScreen"></activity>
+        <activity android:name=".SignUpScreen" />
+        <activity android:name=".Peak_Flow_Test_Screen"></activity>
     </application>
 
 </manifest>
