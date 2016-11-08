@@ -10,7 +10,7 @@ import android.content.Intent;
 import android.support.v4.app.TaskStackBuilder;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import java.lang.Object.*;
+//import java.lang.Object.*;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,14 +28,22 @@ public class MedicineCheck extends AppCompatActivity {
     int icon = R.mipmap.ic_launcher;
     int mId = 1;
 
+    //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+    //stackBuilder.addParentStack(MedicineCheck.class);
+    //stackBuilder.addNextIntent(mResultIntent);
+
+
+    // TRY THIS: alarmmanager for timing notification
+
     Notification.Builder mBuilder = new Notification.Builder(this)
             .setSmallIcon(icon)
             .setContentTitle("Medicine Reminder")
             .setContentText("You have not taken your medicine yet today")
             .setContentIntent(mPendingIntent);
-    NotificationManager nm = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE)
-            .notify(mId, mBuilder.build());
-    //nm.notify(mId, mBuilder.build());   //notify user
+    NotificationManager mNotificationManager = (NotificationManager)getSystemService
+            (Context.NOTIFICATION_SERVICE);
+            //.notify(mId, mBuilder.build());
+    mNotificationManager.notify(mId, mBuilder.build());   //notify user
 
 
     /*NotificationCompat.Builder mBuilder;
