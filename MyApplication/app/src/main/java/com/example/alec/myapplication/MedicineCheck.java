@@ -20,30 +20,14 @@ public class MedicineCheck extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicine_check);
+
+        boolean notTaken = true;
+        if(notTaken) {
+            pushNotify();
+        }
     }
 
-
-    Intent mResultIntent = new Intent(this, MedicineCheck.class);
-    PendingIntent mPendingIntent = PendingIntent.getActivity(this, 0, mResultIntent, 0);
-    int icon = R.mipmap.ic_launcher;
-    int mId = 1;
-
-    //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-    //stackBuilder.addParentStack(MedicineCheck.class);
-    //stackBuilder.addNextIntent(mResultIntent);
-
-
-    // TRY THIS: alarmmanager for timing notification
-
-    Notification.Builder mBuilder = new Notification.Builder(this)
-            .setSmallIcon(icon)
-            .setContentTitle("Medicine Reminder")
-            .setContentText("You have not taken your medicine yet today")
-            .setContentIntent(mPendingIntent);
-    NotificationManager mNotificationManager = (NotificationManager)getSystemService
-            (Context.NOTIFICATION_SERVICE);
-            //.notify(mId, mBuilder.build());
-    mNotificationManager.notify(mId, mBuilder.build());   //notify user
+    //mNotificationManager.notify(mId, mBuilder.build());   //notify user
 
 
     /*NotificationCompat.Builder mBuilder;
@@ -81,4 +65,30 @@ public class MedicineCheck extends AppCompatActivity {
             (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
     // mId allows you to update the notification later on.
     mNotificationManager.notify(mId, mBuilder.build());*/
+
+    private void pushNotify() {
+
+        Intent mResultIntent = new Intent(this, MedicineCheck.class);
+        PendingIntent mPendingIntent = PendingIntent.getActivity(this, 0, mResultIntent, 0);
+        int icon = R.mipmap.ic_launcher;
+        int mId = 1;
+
+        //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+        //stackBuilder.addParentStack(MedicineCheck.class);
+        //stackBuilder.addNextIntent(mResultIntent);
+
+
+        // TRY THIS: alarmmanager for timing notification
+
+        Notification.Builder mBuilder = new Notification.Builder(this)
+                .setSmallIcon(icon)
+                .setContentTitle("Medicine Reminder")
+                .setContentText("You have not taken your medicine yet today")
+                .setContentIntent(mPendingIntent);
+        NotificationManager mNotificationManager = (NotificationManager)getSystemService
+                (Context.NOTIFICATION_SERVICE).notify(mId, mBuilder.build());
+
+
+    }
+
 }
