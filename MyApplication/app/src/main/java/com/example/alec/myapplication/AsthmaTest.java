@@ -3,8 +3,10 @@ package com.example.alec.myapplication;
 import android.annotation.TargetApi;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -28,12 +30,28 @@ public class AsthmaTest extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                long myID = updateDB();
+                Snackbar.make(view, myID+"", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
     }
-    android.support.v4.app.NotificationCompat.Builder mBuilder =
+    protected long updateDB()
+    {
+        AsthmaTestDB mDbHelper = new AsthmaTestDB(this);
+        // Gets the data repository in write mode
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put("Name", "Jim");
+
+// Insert the new row, returning the primary key value of the new row
+        long newRowId = db.insert("AsthmaStuff", null, values);
+
+        return newRowId;
+    }
+    /*android.support.v4.app.NotificationCompat.Builder mBuilder =
             new NotificationCompat.Builder(this)
                     .setContentTitle("take your asthma inhaler")
                     .setContentText("stupid???");
@@ -58,5 +76,5 @@ public class AsthmaTest extends AppCompatActivity {
     NotificationManager mNotificationManager =
             (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 // mId allows you to update the notification later on.
-    mNotificationManager.notify(mId, mBuilder.build());
+    mNotificationManager.notify(mId, mBuilder.build());*/
 }
