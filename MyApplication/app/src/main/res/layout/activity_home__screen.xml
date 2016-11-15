@@ -10,10 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alec.myapplication.Home_Screen">
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        //android:hint="@string/edit_message" >
+
+    </EditText>
+
+
+
     <Button
         android:text="Settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="sendToSettings"
         android:layout_marginTop="24dp"
         android:id="@+id/settings_button"
         android:layout_alignParentTop="true"
@@ -26,6 +37,7 @@
         android:text="Help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:layout_alignTop="@+id/settings_button"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -37,6 +49,7 @@
         android:text="Connect to MyHealth Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:layout_marginTop="41dp"
         android:id="@+id/connect_my_health_login_button"
         android:layout_below="@+id/settings_button"
@@ -49,6 +62,7 @@
         android:text="Asthma Control Test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:layout_centerVertical="true"
         android:id="@+id/asthma_control_test_button"
         android:layout_alignRight="@+id/connect_my_health_login_button"
@@ -60,6 +74,7 @@
         android:text="Medicine Logging"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="17dp"
         android:id="@+id/medicine_log_button"
@@ -72,6 +87,7 @@
         android:text="Current Stats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:layout_marginTop="45dp"
         android:id="@+id/current_stats_button"
         android:layout_below="@+id/asthma_control_test_button"
