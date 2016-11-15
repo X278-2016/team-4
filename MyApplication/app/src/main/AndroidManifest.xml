@@ -26,7 +26,10 @@
         <activity android:name=".Home_Screen" />
         <activity android:name=".Help_Screen" />
         <activity android:name=".MyHealthLogin_Screen" />
-        <activity android:name=".CurrentStats_Screen"></activity>
+        <activity
+            android:name=".CurrentStats_Screen"
+            android:exported="true">
+        </activity>
 
 
 
