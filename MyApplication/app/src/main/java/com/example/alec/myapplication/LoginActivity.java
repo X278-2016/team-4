@@ -29,6 +29,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import android.content.Intent;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -187,6 +189,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
+
+            Intent homeIntent = new Intent(this, Home_Screen.class);
+            startActivity(homeIntent);
         }
     }
 
