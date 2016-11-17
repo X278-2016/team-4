@@ -83,12 +83,4 @@ public class Home_Screen extends AppCompatActivity {
         Intent intent = new Intent(this, CurrentStats_Screen.class);
         startActivity(intent);
     }
-
-    public void sendToSettings(View view) {
-        Intent intent = new Intent(this, Settings_Screen.class);
-        EditText editText = (EditText) findViewById(R.id.editText1);
-        String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
 }
