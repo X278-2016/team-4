@@ -70,6 +70,6 @@ public class AsthmaTest extends AppCompatActivity {
         values.put("SecondNum", val2);
         values.put("ThirdNum", val3);
         values.put("FourthNum", val4);
-
+        return 0;
     }
 }
