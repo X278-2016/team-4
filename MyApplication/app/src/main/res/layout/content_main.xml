@@ -71,7 +71,9 @@
         android:id="@+id/spinner2"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignStart="@+id/textView2"
+        android:spinnerMode="dropdown"
+        android:entries="@array/spinz"/>
 
     <Spinner
         android:layout_width="wrap_content"
@@ -79,7 +81,9 @@
         android:id="@+id/spinner3"
         android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_alignStart="@+id/textView3"
+        android:spinnerMode="dropdown"
+        android:entries="@array/spinz"/>
 
     <Spinner
         android:layout_width="wrap_content"
@@ -87,6 +91,8 @@
         android:id="@+id/spinner4"
         android:layout_below="@+id/textView4"
         android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignStart="@+id/textView4"
+        android:spinnerMode="dropdown"
+        android:entries="@array/spinz"/>
 
 </RelativeLayout>

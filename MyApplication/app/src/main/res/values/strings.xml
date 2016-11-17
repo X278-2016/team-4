@@ -16,8 +16,9 @@
     </string>
     <string name="title_activity_main">MainActivity</string>
     <string-array name="spinz">
-        <item>Array Item One</item>
-        <item>Array Item Two</item>
-        <item>Array Item Three</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>
