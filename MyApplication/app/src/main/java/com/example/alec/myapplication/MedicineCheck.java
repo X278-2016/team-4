@@ -87,8 +87,8 @@ public class MedicineCheck extends AppCompatActivity {
                 .setContentText("You have not taken your medicine yet today")
                 .setContentIntent(mPendingIntent);
 
-        NotificationManager mNotificationManager = (NotificationManager)getSystemService
-                (Context.NOTIFICATION_SERVICE).notify(mId, mBuilder.build());
+        //NotificationManager mNotificationManager = (NotificationManager)getSystemService
+        //        (Context.NOTIFICATION_SERVICE).notify(mId, mBuilder.build());
 
 
 
