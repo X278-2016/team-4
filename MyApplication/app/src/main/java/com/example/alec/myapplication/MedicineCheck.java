@@ -72,7 +72,7 @@ public class MedicineCheck extends AppCompatActivity {
         Intent mResultIntent = new Intent(this, MedicineCheck.class);
         PendingIntent mPendingIntent = PendingIntent.getActivity(this, 0, mResultIntent, 0);
         int icon = R.mipmap.ic_launcher;
-        int mId = 1;
+        int mId = 58392;
 
         //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         //stackBuilder.addParentStack(MedicineCheck.class);
@@ -87,8 +87,9 @@ public class MedicineCheck extends AppCompatActivity {
                 .setContentText("You have not taken your medicine yet today")
                 .setContentIntent(mPendingIntent);
 
-        //NotificationManager mNotificationManager = (NotificationManager)getSystemService
-          //      (Context.NOTIFICATION_SERVICE).notify(mId, mBuilder.build());
+        NotificationManager mNotificationManager = (NotificationManager)getSystemService
+                (Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(mId, mBuilder.build());
 
 
 
