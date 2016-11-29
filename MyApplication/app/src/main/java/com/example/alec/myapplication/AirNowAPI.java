@@ -1,5 +1,9 @@
 package com.example.alec.myapplication;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -9,13 +13,14 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.util.HashMap;
 import java.util.Map;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-
+/*import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;*/
 public class AirNowAPI {
 
-    public static void main(String[] args) throws MalformedURLException, IOException {
+    public static String getAirQuality() throws MalformedURLException, IOException {
 
         // API parameters
         Map  options = new HashMap();
@@ -66,5 +71,6 @@ public class AirNowAPI {
         } catch (Exception e) {
             System.err.println("Unable to perform AirNowAPI request." + e.getMessage());
         }
+        return "done";
     }
 }
