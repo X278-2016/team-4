@@ -10,13 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alec.myapplication.MyHealthLogin_Screen">
 
-    <TextView
+    <Button android:layout_height="wrap_content"
+        android:clickable="true"
+        android:autoLink="web"
+        android:cursorVisible="true"
+        android:layout_width="match_parent"
+        android:id="@+id/button_myhealth"
         android:text="Connect to MyHealth Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/myhealthlogin_title"
-        android:textSize="24sp"
+        android:linksClickable="true"
+        android:onClick="goToMyHealth"
+        android:background="@drawable/vanderbilt_logo"
+        android:layout_marginTop="102dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"></Button>
+
 </RelativeLayout>
