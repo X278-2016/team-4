@@ -72,7 +72,7 @@ public class MedicineCheck extends AppCompatActivity {
         Intent mResultIntent = new Intent(this, MedicineCheck.class);
         PendingIntent mPendingIntent = PendingIntent.getActivity(this, 0, mResultIntent, 0);
         int icon = R.mipmap.ic_launcher;
-        int mId = 1;
+        int mId = 58392;
 
         //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         //stackBuilder.addParentStack(MedicineCheck.class);
