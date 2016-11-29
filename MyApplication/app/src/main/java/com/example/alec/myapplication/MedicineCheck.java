@@ -88,7 +88,8 @@ public class MedicineCheck extends AppCompatActivity {
                 .setContentIntent(mPendingIntent);
 
         NotificationManager mNotificationManager = (NotificationManager)getSystemService
-                (Context.NOTIFICATION_SERVICE).notify(mId, mBuilder.build());
+                (Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(mId, mBuilder.build());
 
 
 
