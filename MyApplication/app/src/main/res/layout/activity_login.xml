@@ -74,6 +74,13 @@
                 android:text="Log in"
                 android:textStyle="bold"/>
 
+            <Button
+                android:text="Sign Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup"
+                android:onClick="sendToSignup"/>
+
 
         </LinearLayout>
     </ScrollView>
