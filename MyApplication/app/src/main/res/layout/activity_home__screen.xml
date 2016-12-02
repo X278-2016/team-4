@@ -14,6 +14,9 @@
 
     <Button
         android:text="Settings"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -23,10 +26,14 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="41dp"
         android:layout_marginStart="41dp"
-        android:onClick = "sendToSettings"/>
+        android:onClick = "sendToSettings"
+        android:background="@drawable/round_button"/>
 
     <Button
         android:text="Help"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/settings_button"
@@ -35,56 +42,70 @@
         android:layout_marginRight="50dp"
         android:layout_marginEnd="50dp"
         android:id="@+id/help_button"
-        android:onClick= "sendToHelp"/>
-
-    <Button
-        android:text="Connect to MyHealth Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:id="@+id/connect_my_health_login_button"
-        android:layout_below="@+id/settings_button"
-        android:layout_alignLeft="@+id/settings_button"
-        android:layout_alignStart="@+id/settings_button"
-        android:layout_alignRight="@+id/help_button"
-        android:layout_alignEnd="@+id/help_button"
-        android:onClick= "sendToMyhealth"/>
-
-    <Button
-        android:text="Asthma Control Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:id="@+id/asthma_control_test_button"
-        android:layout_alignRight="@+id/connect_my_health_login_button"
-        android:layout_alignEnd="@+id/connect_my_health_login_button"
-        android:layout_alignLeft="@+id/connect_my_health_login_button"
-        android:layout_alignStart="@+id/connect_my_health_login_button"
-        android:onClick="sendToControlTest"/>
-
-    <Button
-        android:text="Medicine Logging"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="17dp"
-        android:id="@+id/medicine_log_button"
-        android:layout_alignRight="@+id/current_stats_button"
-        android:layout_alignEnd="@+id/current_stats_button"
-        android:layout_alignLeft="@+id/current_stats_button"
-        android:layout_alignStart="@+id/current_stats_button"
-        android:onClick="sendToMedLog"/>
+        android:onClick= "sendToHelp"
+        android:background="@drawable/round_button"/>
 
     <Button
         android:text="Current Stats"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
         android:id="@+id/current_stats_button"
-        android:layout_below="@+id/asthma_control_test_button"
-        android:layout_alignLeft="@+id/asthma_control_test_button"
-        android:layout_alignStart="@+id/asthma_control_test_button"
-        android:layout_alignRight="@+id/asthma_control_test_button"
-        android:layout_alignEnd="@+id/asthma_control_test_button"
-        android:onClick="sendToStats"/>
+        android:onClick="sendToStats"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/settings_button"
+        android:layout_alignStart="@+id/settings_button"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:text="Medicine Logging"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_log_button"
+        android:onClick="sendToMedLog"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/current_stats_button"
+        android:layout_alignLeft="@+id/connect_my_health_login_button"
+        android:layout_alignStart="@+id/connect_my_health_login_button"
+        android:layout_alignRight="@+id/connect_my_health_login_button"
+        android:layout_alignEnd="@+id/connect_my_health_login_button" />
+
+    <Button
+        android:text="Asthma Control Test"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asthma_control_test_button"
+        android:onClick="sendToControlTest"
+        android:background="@drawable/round_button"
+        android:layout_below="@+id/settings_button"
+        android:layout_alignLeft="@+id/settings_button"
+        android:layout_alignStart="@+id/settings_button"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/settings_button"
+        android:layout_alignEnd="@+id/settings_button" />
+
+    <Button
+        android:text="Vanderbilt MyHealth Login"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect_my_health_login_button"
+        android:onClick= "sendToMyhealth"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/asthma_control_test_button"
+        android:layout_alignLeft="@+id/help_button"
+        android:layout_alignStart="@+id/help_button"
+        android:layout_alignRight="@+id/help_button"
+        android:layout_alignEnd="@+id/help_button" />
 </RelativeLayout>

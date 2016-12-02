@@ -7,10 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#154360"
     tools:context="com.example.alec.myapplication.MedicineCheck">
 
     <TextView
         android:text="Have you taken your medicine?"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:typeface="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -29,6 +33,9 @@
 
         <RadioButton
             android:text="Medicine not taken"
+            android:textColor="#ffffff"
+            android:typeface="monospace"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="53dp"
@@ -40,6 +47,9 @@
 
         <RadioButton
             android:text="Medicine taken"
+            android:textColor="#ffffff"
+            android:typeface="monospace"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

@@ -10,12 +10,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name">
+            android:label="LOGIN">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,25 +22,33 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home_Screen"
-            android:exported="true"/>
-        <activity android:name=".Help_Screen" />
-        <activity android:name=".MyHealthLogin_Screen" />
+            android:exported="true"
+            android:label="HOME"/>
+        <activity android:name=".Help_Screen"
+            android:label="HELP"/>
+        <activity android:name=".MyHealthLogin_Screen"
+            android:label="VANDERBILT MYHEALTH LOGIN"/>
         <activity
             android:name=".CurrentStats_Screen"
-            android:exported="true">
+            android:exported="true"
+            android:label="CURRENT STATS">
         </activity>
 
 
 
         <activity
             android:name=".AsthmaTest"
-            android:label="@string/title_activity_main"
-            android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar">		 	   </activity>
-        <activity android:name=".MedicineCheck" />
-        <activity android:name=".Settings_Screen" />
-        <activity android:name=".SignUpScreen" />
-        <activity android:name=".Peak_Flow_Test_Screen"></activity>
+            android:label="ASTHMA CONTROL TEST"
+            android:exported="true">
+        </activity>
+        <activity android:name=".MedicineCheck"
+            android:label="MEDICINE LOG"/>
+        <activity android:name=".Settings_Screen"
+            android:label="SETTINGS"/>
+        <activity android:name=".SignUpScreen"
+            android:label="SIGN UP"/>
+        <activity android:name=".Peak_Flow_Test_Screen"
+            android:label="PEAK FLOW TEST"></activity>
     </application>
 
 </manifest>
