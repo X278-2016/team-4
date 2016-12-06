@@ -8,90 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#154360"
+    android:background="@drawable/blue_background"
     tools:context="com.example.alec.myapplication.Home_Screen">
 
-
-    <Button
-        android:text="Settings"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:id="@+id/settings_button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:onClick = "sendToSettings"
-        android:background="@drawable/round_button"/>
-
-    <Button
-        android:text="Help"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/settings_button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginEnd="50dp"
-        android:id="@+id/help_button"
-        android:onClick= "sendToHelp"
-        android:background="@drawable/round_button"/>
-
-    <Button
-        android:text="Current Stats"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/current_stats_button"
-        android:onClick="sendToStats"
-        android:background="@drawable/round_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/settings_button"
-        android:layout_alignStart="@+id/settings_button"
-        android:layout_marginBottom="42dp" />
-
-    <Button
-        android:text="Medicine Logging"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/medicine_log_button"
-        android:onClick="sendToMedLog"
-        android:background="@drawable/round_button"
-        android:layout_alignTop="@+id/current_stats_button"
-        android:layout_alignLeft="@+id/connect_my_health_login_button"
-        android:layout_alignStart="@+id/connect_my_health_login_button"
-        android:layout_alignRight="@+id/connect_my_health_login_button"
-        android:layout_alignEnd="@+id/connect_my_health_login_button" />
-
-    <Button
-        android:text="Asthma Control Test"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/asthma_control_test_button"
-        android:onClick="sendToControlTest"
-        android:background="@drawable/round_button"
-        android:layout_below="@+id/settings_button"
-        android:layout_alignLeft="@+id/settings_button"
-        android:layout_alignStart="@+id/settings_button"
-        android:layout_marginTop="20dp"
-        android:layout_alignRight="@+id/settings_button"
-        android:layout_alignEnd="@+id/settings_button" />
 
     <Button
         android:text="Vanderbilt MyHealth Login"
@@ -102,10 +21,83 @@
         android:layout_height="wrap_content"
         android:id="@+id/connect_my_health_login_button"
         android:onClick= "sendToMyhealth"
-        android:background="@drawable/round_button"
-        android:layout_alignTop="@+id/asthma_control_test_button"
-        android:layout_alignLeft="@+id/help_button"
-        android:layout_alignStart="@+id/help_button"
-        android:layout_alignRight="@+id/help_button"
-        android:layout_alignEnd="@+id/help_button" />
+        android:background="@drawable/dark_blue_button"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Medicine Logging"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_log_button"
+        android:onClick="sendToMedLog"
+        android:background="@drawable/dark_blue_button"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/connect_my_health_login_button"
+        android:layout_alignLeft="@+id/current_stats_button"
+        android:layout_alignStart="@+id/current_stats_button" />
+
+    <Button
+        android:text="Current Stats"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_stats_button"
+        android:onClick="sendToStats"
+        android:background="@drawable/dark_blue_button"
+        android:layout_below="@+id/medicine_log_button"
+        android:layout_alignLeft="@+id/asthma_control_test_button"
+        android:layout_alignStart="@+id/asthma_control_test_button"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:text="Asthma Control Test"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asthma_control_test_button"
+        android:onClick="sendToControlTest"
+        android:background="@drawable/dark_blue_button"
+        android:layout_below="@+id/current_stats_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:text="Settings"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_button"
+        android:onClick = "sendToSettings"
+        android:background="@drawable/dark_blue_button"
+        android:layout_alignBottom="@+id/help_button"
+        android:layout_alignLeft="@+id/asthma_control_test_button"
+        android:layout_alignStart="@+id/asthma_control_test_button"
+        android:layout_marginBottom="63dp" />
+
+    <Button
+        android:text="Help"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help_button"
+        android:onClick= "sendToHelp"
+        android:background="@drawable/dark_blue_button"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/settings_button"
+        android:layout_alignStart="@+id/settings_button" />
+
 </RelativeLayout>

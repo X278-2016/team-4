@@ -95,15 +95,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
 
-        Button signUp = (Button) findViewById(R.id.signup_button);
+        Button signUp = (Button) findViewById(R.id.signup);
     }
 
 
 
-    public void sendToSignup(View view) {
+    /*public void sendToSignup(View view) {
         Intent intent = new Intent(this, SignUpScreen.class);
         startActivity(intent);
-    }
+    }*/
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
@@ -359,6 +359,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
         }
+    }
+
+    public void sendToSignup(View view) {
+        Intent intent = new Intent(this, SignUpScreen.class);
+        startActivity(intent);
     }
 }
 
