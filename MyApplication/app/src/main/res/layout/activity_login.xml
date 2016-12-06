@@ -83,14 +83,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/signup"
                 android:onClick="sendToSignup"
-                android:id="@+id/signup_button"
                 style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Sign up"
-                android:textStyle="bold"
-                android:onClick= "sendToSignup"/>
+                android:textStyle="bold" />
 
 
         </LinearLayout>
