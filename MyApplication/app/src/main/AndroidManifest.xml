@@ -39,7 +39,8 @@
         <activity
             android:name=".AsthmaTest"
             android:label="ASTHMA CONTROL TEST"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name=".MedicineCheck"
             android:label="MEDICINE LOG"/>
