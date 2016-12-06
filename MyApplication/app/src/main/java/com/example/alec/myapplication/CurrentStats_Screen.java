@@ -8,6 +8,7 @@ import java.util.Random;
 
 import static java.lang.Thread.sleep;
 
+
 public class CurrentStats_Screen extends AppCompatActivity {
 
     private final String airFeed = "airnowapi.org/aq/data";
@@ -17,7 +18,7 @@ public class CurrentStats_Screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_stats__screen);
         final TextView aqLevel = (TextView)findViewById(R.id.AirQualityLevel_Title);
-        for(int i = 0; i<10; i++)
+        /*for(int i = 0; i<10; i++)
         {
             Random rand = new Random();
             try {
@@ -27,6 +28,19 @@ public class CurrentStats_Screen extends AppCompatActivity {
             }
             int val = rand.nextInt();
             aqLevel.setText(val+"");
+        }*/
+        String aq = AirNowAPI.getAirQuality();
+        aq=aq+"1";
+        aqLevel.setText(aq);
+    }
+    protected void getAirQuality()
+    {
+        try {
+            AirNowAPI.getAirQuality();
+        }
+        catch(Exception e)
+        {
+            System.out.println("no");
         }
     }
 }
