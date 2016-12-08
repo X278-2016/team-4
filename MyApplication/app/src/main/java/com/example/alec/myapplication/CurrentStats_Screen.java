@@ -13,7 +13,8 @@ public class CurrentStats_Screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_stats__screen);
         final TextView aqLevel = (TextView)findViewById(R.id.AirQualityLevel_Title);
-        for(int i = 0; i<10; i++)
+        aqLevel.setText("1");
+        /*for(int i = 0; i<10; i++)
         {
             Random rand = new Random();
             try
@@ -26,6 +27,6 @@ public class CurrentStats_Screen extends AppCompatActivity {
             }
             int val = rand.nextInt();
             aqLevel.setText(val+"");
-        }
+        }*/
     }
 }
