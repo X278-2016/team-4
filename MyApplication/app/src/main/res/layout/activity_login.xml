@@ -78,14 +78,14 @@
                 android:textStyle="bold"/>
 
             <Button
-                android:id="@+id/signup_button"
-                style="?android:textAppearanceSmall"
+                android:text="Sign Up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/signup"
+                android:onClick="sendToSignup"
+                style="?android:textAppearanceSmall"
                 android:layout_marginTop="16dp"
-                android:text="Sign up"
-                android:textStyle="bold"
-                android:onClick= "sendToSignup"/>
+                android:textStyle="bold" />
 
 
         </LinearLayout>
